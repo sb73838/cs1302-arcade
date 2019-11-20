@@ -5,14 +5,12 @@ for this project. Please keep this document organized using Markdown. If you
 click on this file in your team's GitHub repository website, then you will see
 that the Markdown is transformed into nice looking HTML.
 
-Here is a sample entry (delete this line; also: feel free to copy/paste/modify):
+## TUE 2019-11-19 @ 11:55 PM EST
 
-## SUN 2019-04-05 @ 11:55 PM EST
+1. **DONE:** Downloaded the skeleton code. Read the project description and selected two games after
+doing some research. We then created the home page and menu options for the two games. 
 
-1. **DONE:** Downloaded the skeleton code.
+2. **TODO:** Start implementing the UI, mechanics, and scoring for game 1.
 
-2. **TODO:** Finish reading the project description.
-
-3. **PROB:** Had a hard time scheduling physicial meetings with each other at
-   first, but now that we've settled on a regular day/time things are looking
-   great!
+3. **PROB:** There haven't been many problems so far. The only minor issue has been schedule conflicts
+so we have not met as much as we like.
