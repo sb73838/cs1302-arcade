@@ -1,5 +1,6 @@
 package cs1302.arcade;
 
+import javafx.scene.paint.Color;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -25,23 +26,17 @@ public class ArcadeApp extends Application {
     VBox layout2 = new VBox();
 
     Scene homeScreen = new Scene(borderPane, SCENE_WIDTH, SCENE_HEIGHT);
-    Scene game1Screen = new Scene(layout1, SCENE_WIDTH, SCENE_HEIGHT);
+    Scene game1Screen;
     Scene game2Screen = new Scene(layout2, SCENE_WIDTH, SCENE_HEIGHT);
 
     @Override
     public void start(Stage primaryStage) {
 
-        CustomHBox chBox1 = new CustomHBox(primaryStage, homeScreen, "Tetris");
+        game1Screen = new TetrisScene(primaryStage, homeScreen, layout1,
+                                      SCENE_WIDTH, SCENE_HEIGHT, Color.LIGHTBLUE);
         CustomHBox chBox2 = new CustomHBox(primaryStage, homeScreen, "Reversi");
 
         primaryStage.setTitle("CS1302-Arcade!");
-
-        // Game 1
-        Label label1 = new Label("Development of Tetris game is in progress...");
-        label1.setFont(new Font(24));
-        label1.setPadding(new Insets(5, 5, 5, 5));
-        layout1.getChildren().addAll(chBox1, label1);
-        layout1.setSpacing(30);
 
         // Game 2
         Label label2 = new Label("Development of Reversi game is in progress...");
