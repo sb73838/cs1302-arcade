@@ -29,3 +29,19 @@ screen for Reversi and implement its logic.
 3. **PROB:** The only difficulty we had was meeting up because there was thanksgiving break. We were able to
 communicate through skype and hope to meet in person more often for next week. In addition, it took a few
 trials to develop the layout for Tetris home screen.
+
+## WED 2019-12-04 @ 11:55 PM EST
+
+1. **DONE:** Finished most of the development for Tetris. As part of Tetris, we created TetrisShape,
+TetrisBoard, Point and TetrisScene classes. The css styling was put in a separate file application.css under
+resources. The game supports different levels as the user keeps making progress. All the keystrokes have
+been made to work accordingly and a pause button stops the game at its current state. We also created the base
+game board for the reversi game as well as the player pieces, using a separate ReversiScene class.
+
+2. **TODO:** For Tetris, we will finish adding the instructions guide under a help button. We also plan to add
+a highscore table as part of the extra credit. Now we will focus on developing the game rules for Reversi.
+Last, we plan to add an animated intro to our arcade app as part of the second extra credit opportunity.
+
+3. **PROB:** There were not any difficulties this week. We were able to meet up at Boyd and work on Tetris for
+the logic of the game and the main board for Reversi. We plan to meet up a few more times in the upcoming week and finish
+implementing Reversi.
