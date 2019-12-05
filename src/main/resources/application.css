@@ -1,0 +1,29 @@
+.tGrid {
+    -fx-vgap: 2;
+    -fx-hgap: 2;
+    -fx-padding: 2;
+}
+
+.rGrid {
+    -fx-vgap: 2;
+    -fx-hgap: 2;
+    -fx-padding: 4;
+}
+
+.tBackground {
+    -fx-background-color: #161616;
+}
+
+.rBackground {
+    -fx-background-color: #161616;
+}
+
+.arcadeScore {
+    -fx-font: 16 verdana; 
+    -fx-base: #b6e7c9;
+}
+
+.arcadeButton {
+    -fx-font: 16 verdana; 
+    -fx-base: #b6e7c9;
+}

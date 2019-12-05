@@ -5,6 +5,7 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -18,8 +19,11 @@ import javafx.stage.Stage;
 
 public class ArcadeApp extends Application {
 
-    private static final int SCENE_WIDTH = 600;
+    private static final int SCENE_WIDTH = 700;
     private static final int SCENE_HEIGHT = 500;
+
+    private static final int HOME_BUTTON_WIDTH = 300;
+    private static final int HOME_BUTTON_HEIGHT = 300;
 
     BorderPane borderPane = new BorderPane();
     VBox layout1 = new VBox();
@@ -27,23 +31,15 @@ public class ArcadeApp extends Application {
 
     Scene homeScreen = new Scene(borderPane, SCENE_WIDTH, SCENE_HEIGHT);
     Scene game1Screen;
-    Scene game2Screen = new Scene(layout2, SCENE_WIDTH, SCENE_HEIGHT);
-
+    Scene game2Screen;
+    
     @Override
     public void start(Stage primaryStage) {
 
-        game1Screen = new TetrisScene(primaryStage, homeScreen, layout1,
-                                      SCENE_WIDTH, SCENE_HEIGHT, Color.LIGHTBLUE);
-        CustomHBox chBox2 = new CustomHBox(primaryStage, homeScreen, "Reversi");
+        game1Screen = new TetrisScene(primaryStage, homeScreen, layout1, SCENE_WIDTH);
+        game2Screen = new ReversiScene(primaryStage, homeScreen, layout2, SCENE_WIDTH);
 
         primaryStage.setTitle("CS1302-Arcade!");
-
-        // Game 2
-        Label label2 = new Label("Development of Reversi game is in progress...");
-        label2.setFont(new Font(24));
-        label2.setPadding(new Insets(5, 5, 5, 5));
-        layout2.getChildren().addAll(chBox2, label2);
-        layout2.setSpacing(30);
 
         // Home Page
         Text text = new Text(10, 40, "Welcome to our Arcade!");
@@ -51,14 +47,20 @@ public class ArcadeApp extends Application {
 
         // A button with the Tetris icon.
         Image imageTetris = new Image("Tetris.jpg");
-        Button button1 = new Button("", new ImageView(imageTetris));
+	Button button1 = new Button("Tetris", new ImageView(imageTetris));
+        button1.setContentDisplay(ContentDisplay.TOP);
+        button1.setFont(new Font(24));
+        button1.setPrefSize(HOME_BUTTON_WIDTH, HOME_BUTTON_HEIGHT);
         button1.setOnAction(e -> primaryStage.setScene(game1Screen));
 
         // A button with the Reversi icon.
         Image imageReversi = new Image("Reversi.jpg");
-        Button button2 = new Button("", new ImageView(imageReversi));
+        Button button2 = new Button("Reversi", new ImageView(imageReversi));
+        button2.setContentDisplay(ContentDisplay.TOP);
+        button2.setFont(new Font(24));
+        button2.setPrefSize(HOME_BUTTON_WIDTH, HOME_BUTTON_HEIGHT);
         button2.setOnAction(e -> primaryStage.setScene(game2Screen));
-
+	
         HBox mainWelcomeHBox = new HBox(text);
         mainWelcomeHBox.setPadding(new Insets(15, 12, 15, 12));
         mainWelcomeHBox.setStyle("-fx-background-color: #336699;");
@@ -70,18 +72,6 @@ public class ArcadeApp extends Application {
 
         gameGrid.add(button1, 0, 0);
         gameGrid.add(button2, 1, 0);
-
-        Label tetrisLabel = new Label("Tetris");
-        Label reversiLabel = new Label("Reversi");
-
-        tetrisLabel.setFont(new Font(24));
-        reversiLabel.setFont(new Font(24));
-
-        gameGrid.add(tetrisLabel, 0, 1);
-        gameGrid.add(reversiLabel, 1, 1);
-
-        GridPane.setHalignment(tetrisLabel, javafx.geometry.HPos.CENTER);
-        GridPane.setHalignment(reversiLabel, javafx.geometry.HPos.CENTER);
 
         VBox homeLayout = new VBox(mainWelcomeHBox, gameGrid);
         homeLayout.setSpacing(20);
