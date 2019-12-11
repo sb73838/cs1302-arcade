@@ -45,3 +45,16 @@ Last, we plan to add an animated intro to our arcade app as part of the second e
 3. **PROB:** There were not any difficulties this week. We were able to meet up at Boyd and work on Tetris for
 the logic of the game and the main board for Reversi. We plan to meet up a few more times in the upcoming week and finish
 implementing Reversi.
+
+## WED 2019-12-11 @ 3:30 PM EST
+
+1. **DONE:** We finished developing both Tetris and Reversi for our Arcade App. We also provided instruction for each
+game with all the proper rules. These instructions are accessed by clicking the button labeled "Instructions" and a
+new pop up window appears. 
+
+2. **PROB:** We had to change our design for Reversi. In addition, we had to clean up some files from previous submissions
+using git rm. We were able to meet up as we planned this week, so there were no scheduling problems.  
+
+3. **EXTRA CREDIT:** We added a high score table to keep track of the top three scores in Tetris. The user has the option
+to enter their name on the home screen or can go as default guest. The high score table is accessible from the button 
+labeled "High Scores". 

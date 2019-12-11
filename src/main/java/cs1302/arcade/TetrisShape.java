@@ -10,20 +10,20 @@ import java.util.List;
  * 
  * 1 --> L, 2 --> I, 3 --> T, 4 --> S, 5 --> Z, 6 --> J, 7 --> O
  * 
- * @author Sahil Balhara
+ * @author Sahil Balhara & Vincent Bui
  */
 public class TetrisShape {
 
     private int type;
 
     /**
-     * Represents orientation for the current rotation (an integer from 0 to 3)
+     * Represents orientation for the current rotation (an integer from 0 to 3).
      */
     private int rotation;
     private List<Point> points;
 
     /**
-     * Constructor of the class specifying the type of the shape
+     * Constructor of the class specifying the type of the shape.
      * 
      * @param num type of shape
      */
@@ -37,7 +37,7 @@ public class TetrisShape {
     }
 
     /**
-     * Constructor of the class, copying from another TetrisShape
+     * Constructor of the class, copying from another TetrisShape.
      * 
      * @param tetrisShape shape to be copied
      */
@@ -54,7 +54,7 @@ public class TetrisShape {
     }
 
     /**
-     * Creates the starting Points for the shape according to its type
+     * Creates the starting Points for the shape according to its type.
      */
     private void createPoints() {
 
@@ -110,7 +110,7 @@ public class TetrisShape {
     }
 
     /**
-     * Moves the Tetris shape down one place
+     * Moves the Tetris shape down one place.
      */
     public void moveDown() {
         for (Point i : points) {
@@ -119,7 +119,7 @@ public class TetrisShape {
     }
 
     /**
-     * Moves the Tetris shape left one place
+     * Moves the Tetris shape left one place.
      */
     public void moveLeft() {
         for (Point i : points) {
@@ -128,7 +128,7 @@ public class TetrisShape {
     }
 
     /**
-     * Moves the Tetris shape right one place
+     * Moves the Tetris shape right one place.
      */
     public void moveRight() {
         for (Point i : points) {
@@ -137,7 +137,7 @@ public class TetrisShape {
     }
 
     /**
-     * This method rotates the Tetris shape to the right
+     * This method rotates the Tetris shape to the right.
      */
     public void rotate() {
 
@@ -188,7 +188,7 @@ public class TetrisShape {
     }
 
     /**
-     * This method returns the Points for the next rotation of the shape
+     * This method returns the Points for the next rotation of the shape.
      * 
      * @return list of rotated Points
      */
@@ -201,7 +201,7 @@ public class TetrisShape {
     }
 
     /**
-     * Returns the type of shape (numerical representation)
+     * Returns the type of shape (numerical representation).
      * 
      * @return type of shape
      */
@@ -210,7 +210,7 @@ public class TetrisShape {
     }
 
     /**
-     * Returns all the Points for this shape
+     * Returns all the Points for this shape.
      * 
      * @return list of Points
      */

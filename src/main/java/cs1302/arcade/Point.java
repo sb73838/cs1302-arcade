@@ -5,7 +5,7 @@ package cs1302.arcade;
  * on the Tetris board. It has x and y coordinates, as well as the type of shape
  * the point belongs to.
  * 
- * @author Sahil Balhara
+ * @author Sahil Balhara & Vincent Bui
  */
 public class Point {
 
@@ -14,7 +14,7 @@ public class Point {
     private int type;
 
     /**
-     * Constructor of the class specifying the coordinates of the point
+     * Constructor of the class specifying the coordinates of the point.
      * 
      * @param x the x-coordinate of the point
      * @param y the y-coordinate of the point
@@ -41,7 +41,7 @@ public class Point {
     }
 
     /**
-     * Updates both the coordinates for the point
+     * Updates both the coordinates for the point.
      * 
      * @param x the new x-coordinate of the point
      * @param y the new y-coordinate of the point
@@ -53,7 +53,7 @@ public class Point {
     }
 
     /**
-     * Returns the type of shape the point belongs to
+     * Returns the type of shape the point belongs to.
      * 
      * @return the type of the shape
      */
@@ -62,7 +62,7 @@ public class Point {
     }
 
     /**
-     * Updates the x-coordinate
+     * Updates the x-coordinate.
      * 
      * @param x the new x-coordinate of the point
      */
@@ -71,7 +71,7 @@ public class Point {
     }
 
     /**
-     * Returns the x-coordinate
+     * Returns the x-coordinate.
      * 
      * @return the x-coordinate of the point
      */
@@ -80,7 +80,7 @@ public class Point {
     }
 
     /**
-     * Modifies the value of the x-coordinate
+     * Modifies the value of the x-coordinate.
      * 
      * @param mod the value to be added to the x-coordinate
      */
@@ -89,7 +89,7 @@ public class Point {
     }
 
     /**
-     * Updates the y-coordinate
+     * Updates the y-coordinate.
      * 
      * @param y the new y-coordinate of the point
      */
@@ -98,7 +98,7 @@ public class Point {
     }
 
     /**
-     * Returns the y-coordinate
+     * Returns the y-coordinate.
      * 
      * @return the y-coordinate of the point
      */
@@ -107,7 +107,7 @@ public class Point {
     }
 
     /**
-     * Modifies the value of the y-coordinate
+     * Modifies the value of the y-coordinate.
      * 
      * @param mod the value to be added to the y-coordinate
      */
@@ -117,7 +117,7 @@ public class Point {
 
     /**
      * Overrides the default equality behavior, checks both the x and y coordinates
-     * individually
+     * individually.
      * 
      * @param object the object that will be compared with the current object
      * @return true if the two objects are equal

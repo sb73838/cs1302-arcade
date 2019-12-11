@@ -16,7 +16,7 @@ import java.util.function.Predicate;
  * also keeps updating the current score, current level, number of lines
  * cleared, as well as the speed of the moving TetrisShape.
  * 
- * @author Sahil Balhara
+ * @author Sahil Balhara & Vincent Bui
  */
 public class TetrisBoard {
 
@@ -27,13 +27,13 @@ public class TetrisBoard {
     private int currentTimeToMove;
 
     /**
-     * A list of Points for the already settled TetrisShapes
+     * A list of Points for the already settled TetrisShapes.
      */
     private List<Point> points;
     private Random random;
 
     /**
-     * The TetrisShape that is currently moving
+     * The TetrisShape that is currently moving.
      */
     private TetrisShape currentTetrisShape;
 
@@ -42,7 +42,7 @@ public class TetrisBoard {
     public static final int TIME_INTERVAL = 750;
 
     /**
-     * Constructor of the TetrisBoard class
+     * Constructor of the TetrisBoard class.
      */
     public TetrisBoard() {
 
@@ -59,7 +59,7 @@ public class TetrisBoard {
 
     /**
      * Creates a new TetrisShape using random class and sets it as the current
-     * TetrisShape
+     * TetrisShape.
      */
     public void createCurrentTetrisShape() {
 
@@ -78,7 +78,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Method for detecting collision with other shapes in the downward direction
+     * Method for detecting collision with other shapes in the downward direction.
      * 
      * @return true if there are Point(s) down the current TetrisShape
      */
@@ -94,7 +94,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Method for detecting collision with other shapes in the right direction
+     * Method for detecting collision with other shapes in the right direction.
      * 
      * @return true if there are Point(s) to the right of the current TetrisShape
      */
@@ -110,7 +110,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Method for detecting collision with other shapes in the left direction
+     * Method for detecting collision with other shapes in the left direction.
      * 
      * @return true if there are Point(s) to the left of the current TetrisShape
      */
@@ -126,7 +126,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Method for deciding when the game is over
+     * Method for deciding when the game is over.
      * 
      * @return true if the current TetrisShape is close to the top
      */
@@ -142,7 +142,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Method for detecting whether the current shape can move in the left direction
+     * Method for detecting whether the current shape can move in the left direction.
      * 
      * @return true if the current TetrisShape is close to the left
      */
@@ -159,7 +159,7 @@ public class TetrisBoard {
 
     /**
      * Method for detecting whether the current shape can move in the right
-     * direction
+     * direction.
      * 
      * @return true if the current TetrisShape is close to the right
      */
@@ -176,7 +176,7 @@ public class TetrisBoard {
 
     /**
      * Method for detecting whether the current shape can move in the downward
-     * direction
+     * direction.
      * 
      * @return true if the current TetrisShape is close to the bottom
      */
@@ -192,7 +192,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Method for determining whether the current shape can rotate
+     * Method for determining whether the current shape can rotate.
      * 
      * @return true if the next rotation is within the TetrisBoard and does not
      *         collide with other TetrisShapes
@@ -224,7 +224,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Move the current TetrisShape to the left
+     * Move the current TetrisShape to the left.
      */
     public void moveLeft() {
 
@@ -235,7 +235,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Move the current TetrisShape to the right
+     * Move the current TetrisShape to the right.
      */
     public void moveRight() {
 
@@ -247,7 +247,7 @@ public class TetrisBoard {
 
     /**
      * Moves the current TetrisShape down, checks if the game is finished and
-     * creates another TetrisShape if it can't move down
+     * creates another TetrisShape if it can't move down.
      */
     public void moveDown() {
 
@@ -266,7 +266,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Clears completed horizontal lines, updates the current score and level
+     * Clears completed horizontal lines, updates the current score and level.
      */
     private void removeLines() {
 
@@ -362,7 +362,7 @@ public class TetrisBoard {
 
     /**
      * Returns a list of points for shapes already settled at the bottom and points
-     * taken by the current Tetris Shape
+     * taken by the current Tetris Shape.
      * 
      * @return list containing all the Points on the TetrisBoard
      */
@@ -384,7 +384,7 @@ public class TetrisBoard {
     }
 
     /**
-     * This method returns the number of lines cleared
+     * This method returns the number of lines cleared.
      * 
      * @return the total number of lines cleared
      */
@@ -394,7 +394,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Returns the game's current status
+     * Returns the game's current status.
      * 
      * @return true if the game is over
      */
@@ -404,7 +404,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Returns the game's current level of play
+     * Returns the game's current level of play.
      * 
      * @return the current level of play
      */
@@ -414,7 +414,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Returns the time taken by the current shape to move one step
+     * Returns the time taken by the current shape to move one step.
      * 
      * @return the time taken by the current shape to move one step
      */
@@ -424,7 +424,7 @@ public class TetrisBoard {
     }
 
     /**
-     * Returns the game's current score
+     * Returns the game's current score.
      * 
      * @return the score of the current game
      */
