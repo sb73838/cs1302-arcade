@@ -95,8 +95,8 @@ public class ReversiScene extends Scene {
      */
     public ReversiScene(Stage pStage, Scene hScreen, VBox layout, double width) {
 
-        super(layout, width, 725, Color.LIGHTBLUE);
-        layout.setSpacing(10);
+        super(layout, width, 720, Color.LIGHTBLUE);
+        layout.setSpacing(5);
         layout.getStyleClass().add("rBackground");
         this.getStylesheets().add("application.css");
         primaryStage = pStage;
@@ -325,7 +325,7 @@ public class ReversiScene extends Scene {
         // initializing the scoring grid
         scoreGrid = new GridPane();
         scoreGrid.setPrefWidth(400);
-        scoreGrid.setPrefHeight(150);
+        scoreGrid.setPrefHeight(130);
         scoreGrid.getStyleClass().add("greenBorder");
 
         // setting row and column dimensions (height and width)
@@ -335,9 +335,9 @@ public class ReversiScene extends Scene {
         scoreGrid.getColumnConstraints().add(new ColumnConstraints(100));
         scoreGrid.getColumnConstraints().add(new ColumnConstraints(110));
 
-        scoreGrid.getRowConstraints().add(new RowConstraints(40));
-        scoreGrid.getRowConstraints().add(new RowConstraints(40));
-        scoreGrid.getRowConstraints().add(new RowConstraints(40));
+        scoreGrid.getRowConstraints().add(new RowConstraints(33));
+        scoreGrid.getRowConstraints().add(new RowConstraints(33));
+        scoreGrid.getRowConstraints().add(new RowConstraints(33));
 
         // setting the players' names and their initial scores
         player1Label = new Label("Player 1:");

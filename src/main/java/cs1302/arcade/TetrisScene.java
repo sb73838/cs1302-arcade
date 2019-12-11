@@ -110,8 +110,8 @@ public class TetrisScene extends Scene {
      */
     public TetrisScene(Stage pStage, Scene hScreen, VBox layout, double width) {
 
-        super(layout, width, 725, Color.LIGHTBLUE);
-        layout.setSpacing(10);
+        super(layout, width, 720, Color.LIGHTBLUE);
+        layout.setSpacing(5);
         this.getStylesheets().add("application.css");
         primaryStage = pStage;
         homeScreen = hScreen;
